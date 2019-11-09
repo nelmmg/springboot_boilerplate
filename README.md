@@ -1,4 +1,4 @@
-# spring boilerplate
+# springboot boilerplate
 
 Boilerplate for Springboot 2.x:
 <br/>
@@ -11,7 +11,11 @@ https://spring-boot-ng.herokuapp.com/getBoiler
 
 Swagger:
 https://spring-boot-ng.herokuapp.com/swagger-ui.html
+<br>
+Note: Heroku can take up to 30seconds to awake in case there are no accesses during 30min
+
 <br><br>
+
 
 <h3> Includes: </h3>
 
