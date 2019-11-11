@@ -24,7 +24,6 @@
 		<cucumber.version>4.2.6</cucumber.version>
 		<jacoco.version>0.8.5</jacoco.version>
 		<checkstyle.version>3.1.0</checkstyle.version>
-		<powermock.version>2.0.4</powermock.version>
 	</properties>
 
 	<dependencies>
@@ -56,13 +55,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.powermock</groupId>
-			<artifactId>powermock-reflect</artifactId>
-			<version>${powermock.version}</version>
 			<scope>test</scope>
 		</dependency>
 
