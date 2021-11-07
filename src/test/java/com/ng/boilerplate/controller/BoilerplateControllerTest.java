@@ -13,7 +13,7 @@ public class BoilerplateControllerTest {
   @Before
   public void setup() {
     // Instantiate the mocks - NA on this case - just for reference
-    MockitoAnnotations.initMocks(this);
+    MockitoAnnotations.openMocks(this);
 
     // Create the controller with any mocks you have
     controller = new BoilerplateController();

@@ -1,6 +1,7 @@
 package com.ng.boilerplate.bdd;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.cucumber.spring.CucumberContextConfiguration;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
