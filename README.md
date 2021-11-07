@@ -35,5 +35,5 @@ Creates a coverage report using Jacoco:
 Bdd package ready to run the tests using Cucumber
 <br/><br/>
 
-<h5> API Documentation with Swagger 2 </h5>
-Swagger configuration ready
+<h5> API Documentation with Open API 3 </h5>
+Open API 3 available at: host:port/swagger.html
