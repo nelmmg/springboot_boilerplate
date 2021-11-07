@@ -1,9 +1,11 @@
 package com.ng.boilerplate.controller;
 
 import com.ng.boilerplate.model.BoilerResponse;
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +24,11 @@ public class BoilerplateController {
     // Add any injection dependency here
   }
 
-  @ApiOperation(value = "Get boiler plate response", nickname = "getBoiler")
-  @ApiResponses(value = { @ApiResponse(code = 200, message = "OK") })
+
+  @Operation(summary = "Return an Hello Boiler", description = "Returns the OK for the boilerplate", tags = { "boilerplate" })
+  @ApiResponses(value = {
+          @ApiResponse(responseCode = "200", description = "successful operation",
+                  content = @Content(schema = @Schema(implementation = BoilerResponse.class))) })
   @RequestMapping(
       value = "/getBoiler",
       method = RequestMethod.GET,
