@@ -172,7 +172,7 @@
 										<limit>
 											<counter>CLASS</counter>
 											<value>MISSEDCOUNT</value>
-											<minimum>2</minimum>
+											<maximum>2</maximum>
 										</limit>
 									</limits>
 								</rule>

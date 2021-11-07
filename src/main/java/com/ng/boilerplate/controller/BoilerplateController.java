@@ -25,7 +25,10 @@ public class BoilerplateController {
   }
 
 
-  @Operation(summary = "Return an Hello Boiler", description = "Returns the OK for the boilerplate", tags = { "boilerplate" })
+  @Operation(
+          summary = "Return an Hello Boiler",
+          description = "Returns the OK for the boilerplate",
+          tags = { "boilerplate" })
   @ApiResponses(value = {
           @ApiResponse(responseCode = "200", description = "successful operation",
                   content = @Content(schema = @Schema(implementation = BoilerResponse.class))) })
